@@ -1,0 +1,38 @@
+{
+  "name": "react-mobx-sticky-notes",
+  "version": "1.0.0",
+  "description": "MobX implementation with React",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack serve --port 3000 --mode development",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-ata/react-mobx-sticky-notes.git"
+  },
+  "keywords": [
+    "react",
+    "mobx"
+  ],
+  "author": "Muhammad Ata",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m-ata/react-mobx-sticky-notes/issues"
+  },
+  "homepage": "https://github.com/m-ata/react-mobx-sticky-notes#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.2"
+  }
+}
