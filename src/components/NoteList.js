@@ -1,21 +1,17 @@
-import React from 'react';
-import store from '../store';
+import React from "react";
+import store from "../store";
 import { observer } from "mobx-react";
+import Note from "./Note";
 
 const NoteList = () => {
+  const notes = store.getAllNotes;
 
-    const notes = store.getAllNotes;
-
-    return (
-        <div className="container">
-          <ul>
+  return (
+      <>
         {notes.map((element, index) => (
-          <li key={index} onClick={() => store.removeItem(index)}>
-            {element}
-          </li>
+          <Note key={index} note={element} />
         ))}
-      </ul>
-        </div>
-    )
-}
+      </>
+  );
+};
 export default observer(NoteList);
