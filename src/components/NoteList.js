@@ -7,13 +7,15 @@ const NoteList = () => {
     const notes = store.getAllNotes;
 
     return (
-        <ul>
+        <div className="container">
+          <ul>
         {notes.map((element, index) => (
           <li key={index} onClick={() => store.removeItem(index)}>
             {element}
           </li>
         ))}
       </ul>
+        </div>
     )
 }
 export default observer(NoteList);

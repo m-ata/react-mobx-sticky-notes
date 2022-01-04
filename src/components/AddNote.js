@@ -8,15 +8,16 @@ const AddNote = () => {
 
     const handleSubmit = () => {
         store.addNote(note);
+        setNote('');
     }
 
-    return <>
+    return <div className="container">
     <input
         value={note}
         onChange={(e) => setNote(e.target.value)}
       />
-      <button onClick={handleSubmit}>Add Item</button>
-    </>
+      <button onClick={handleSubmit}>Add</button>
+    </div>
 }
 
 export default observer(AddNote);
