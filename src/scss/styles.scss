@@ -13,8 +13,17 @@
   &:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     cursor: pointer;
+    .remove {
+      display: block;
+      float: right;
+      margin: 8px;
+    }
   }
   .content {
     padding: 2px 16px;
+  }
+
+  .remove {
+    display: none;
   }
 }
