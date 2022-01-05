@@ -21,6 +21,10 @@
   }
   .content {
     padding: 2px 16px;
+    p {
+      overflow: hidden;
+      word-break: break-all;
+    }
   }
 
   .remove {
