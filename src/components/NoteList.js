@@ -9,7 +9,7 @@ const NoteList = () => {
   return (
       <>
         {notes.map((element, index) => (
-          <Note key={index} note={element} />
+          <Note key={index} note={element} index={index} />
         ))}
       </>
   );
