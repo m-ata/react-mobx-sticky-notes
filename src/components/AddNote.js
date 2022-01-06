@@ -12,11 +12,12 @@ const AddNote = () => {
     }
 
     return <div className="container">
-    <input
+    <textarea
         value={note}
         onChange={(e) => setNote(e.target.value)}
+        rows={5}
       />
-      <button onClick={handleSubmit}>Add</button>
+      <button className={`add-btn ${!note ? 'disabled' : ''}`} disabled={!note} onClick={handleSubmit}>Add</button>
     </div>
 }
 

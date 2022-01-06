@@ -1,6 +1,22 @@
 .container {
   display: flex;
   justify-content: center;
+  align-items: center;
+
+  .add-btn {
+    height: 30px;
+    width: 60px;
+    margin: 8px;
+    border-radius: 5px;
+    background-color: #1565c0;
+    color: #ffffff;
+    border-color: transparent;
+    cursor: pointer;
+  }
+  .disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
 }
 
 .card {
