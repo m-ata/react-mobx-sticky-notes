@@ -16,6 +16,7 @@ const AddNote = () => {
         value={note}
         onChange={(e) => setNote(e.target.value)}
         rows={5}
+        className='text-area'
       />
       <button className={`add-btn ${!note ? 'disabled' : ''}`} disabled={!note} onClick={handleSubmit}>Add</button>
     </div>

@@ -12,7 +12,7 @@ const App = () => {
   return (
     <>
       <div className="container">
-        <h3>Welcome to Sticky Notes with MobX</h3>
+        <h2>Welcome to Sticky Notes with MobX</h2>
       </div>
       <AddNote />
       <NoteList />

@@ -3,6 +3,12 @@
   justify-content: center;
   align-items: center;
 
+  .text-area {
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    min-width: 230px;
+  }
+
   .add-btn {
     height: 30px;
     width: 60px;
