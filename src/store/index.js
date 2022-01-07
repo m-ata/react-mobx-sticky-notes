@@ -26,7 +26,6 @@ class StickyNotesStore {
     }
 
     removeNote = (index) => {
-        console.log(index);
         this.notes.splice(index, 1);
     }
 }
